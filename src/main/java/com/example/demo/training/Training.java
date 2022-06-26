@@ -23,4 +23,5 @@ public class Training {
     @Column(name = "kCal")
     private Integer kCal;
     private LocalTime time;
+    private String noteText;
 }
