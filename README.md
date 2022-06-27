@@ -15,7 +15,7 @@ Lombok.**
 - Create DataBase,
 - Change 'ddl-auto' in aplication.properties from  'update' to 'create',
 - Run project,
--Using browser to testing
+- Using browser to testing
 
 ## Data Base MySQL
 ```mysql
