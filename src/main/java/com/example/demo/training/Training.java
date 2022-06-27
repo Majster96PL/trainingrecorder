@@ -1,17 +1,16 @@
 package com.example.demo.training;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.sql.Date;
+import java.sql.Time;
 
 @Entity
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+
 public class Training {
 
     @Id
@@ -19,9 +18,17 @@ public class Training {
     private Long id;
     private Integer kilometres;
     @Column(name = "trainingDate")
-    private LocalDate trainingDate;
+    private Date trainingDate;
     @Column(name = "kCal")
     private Integer kCal;
-    private LocalTime time;
+    private Time time;
     private String noteText;
+
+    public Training(Integer kilometres, Date trainingDate, Integer kCal, Time time, String noteText) {
+        this.kilometres = kilometres;
+        this.trainingDate = trainingDate;
+        this.kCal = kCal;
+        this.time = time;
+        this.noteText = noteText;
+    }
 }
