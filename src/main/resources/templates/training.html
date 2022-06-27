@@ -28,7 +28,7 @@
                 <td th:text="${training.trainingDate}"></td>
                 <td th:text="${training.kCal}"></td>
                 <td th:text="${training.time}"></td>
-                <td><input type="text"></td>
+                <td th:text="${training.noteText}"></td>
                 <td><a th:href="@{/update/{id}(id=${training.id})}"
                        class="btn btn-primary">Update</a>
                     <a th:href="@{/delete/{id}(id=${training.id})}"

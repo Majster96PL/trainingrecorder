@@ -33,9 +33,9 @@ public class TrainingController {
     }
 
     @GetMapping("/update/{id}")
-    public String showFormForUpdate(@PathVariable ( value = "id") Long id, Model model) {
+    public String showFormForUpdate(@PathVariable( value = "id") Long id, Model model) {
         Training training = trainingService.updateTraining(id);
-        model.addAttribute("employee", training);
+        model.addAttribute("training", training);
         return "update";
     }
 

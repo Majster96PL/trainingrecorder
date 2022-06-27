@@ -17,26 +17,18 @@ public class TrainingService {
     }
 
     public Training saveTraining(Training training){
-        Training newRecord = new Training(
-                training.getKilometres(),
-                training.getTrainingDate(),
-                training.getKCal(),
-                training.getTime(),
-                training.getNoteText()
-        );
-        return trainingRepository.save(newRecord);
+        return trainingRepository.save(training);
     }
 
     public Training updateTraining(Long id){
         Optional<Training> optionalTraining = trainingRepository.findById(id);
         Training training = null;
-
         if(optionalTraining.isPresent()){
             training = optionalTraining.get();
         }else{
             throw new TrainingException("Training not found!");
         }
-        return training;
+        return trainingRepository.save(training);
     }
 
     public void deleteTraining(Long id){
