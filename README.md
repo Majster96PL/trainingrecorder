@@ -6,6 +6,7 @@
 Spring Web,
 Spring Security,
 Spring Data JPA,
+Thymeleaf,
 MySQL,
 Lombok.**
 
@@ -32,6 +33,6 @@ localhost:8080/training
 
 ![image](https://user-images.githubusercontent.com/80486633/175926669-a25efef3-50f7-4760-90ab-7525933fca78.png)
 
-##Update record
+## Update record
 
 ![image](https://user-images.githubusercontent.com/80486633/175926764-bc4d0c93-ba67-4635-8754-7d2f24972a26.png)
